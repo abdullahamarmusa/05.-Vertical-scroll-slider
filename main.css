@@ -1,0 +1,66 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font: 18px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  position: absolute;
+  z-index: 21;
+  right: 20px;
+  width: 11px;
+  text-align: center;
+  left: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.swiper-pagination .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 8px 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  display: block;
+  border-radius: 10px;
+  background: #fff;
+  opacity: 0.2;
+  transition: all 0.3s;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fff;
+  height: 30px;
+  box-shadow: 0px 0px 20px rgba(252, 56, 56, 0.3);
+}
